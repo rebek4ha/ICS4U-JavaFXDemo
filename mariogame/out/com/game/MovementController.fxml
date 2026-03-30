@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="gamePane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.game.MovementController">
+    
+    <!-- Player Sprite (Blue Rectangle) -->
+    <Rectangle fx:id="player" x="100.0" y="100.0" width="40.0" height="40.0" fill="#0000FF" />
+    
+    <!-- Obstacles (Gray Rectangles) -->
+    <Rectangle fx:id="wall1" x="200.0" y="150.0" width="150.0" height="30.0" fill="#808080" />
+    <Rectangle fx:id="wall2" x="500.0" y="100.0" width="30.0" height="200.0" fill="#808080" />
+    <Rectangle fx:id="wall3" x="300.0" y="350.0" width="100.0" height="100.0" fill="#808080" />
+    <Rectangle fx:id="wall4" x="100.0" y="400.0" width="200.0" height="30.0" fill="#808080" />
+    <Rectangle fx:id="wall5" x="600.0" y="400.0" width="150.0" height="30.0" fill="#808080" />
+    
+    <!-- Collision Text -->
+    <Text fx:id="collisionText" x="10.0" y="30.0" text="No collision" fill="#000000">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Text>
+    
+    <!-- Instructions -->
+    <Text x="10.0" y="580.0" text="Use WASD or Arrow Keys to move" fill="#000000">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+</Pane>

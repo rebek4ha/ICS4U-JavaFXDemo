@@ -63,10 +63,11 @@ public class MovementController {
 
         if (keysPressed.contains("W") || keysPressed.contains("UP")) {
             dy -= playerSpeed;
-        }
+        } 
         if (keysPressed.contains("S") || keysPressed.contains("DOWN")) {
             dy += playerSpeed;
         }
+        
         if (keysPressed.contains("A") || keysPressed.contains("LEFT")) {
             dx -= playerSpeed;
         }
@@ -92,7 +93,7 @@ public class MovementController {
             player.getBoundsInParent().intersects(wall4.getBoundsInParent()) ||
             player.getBoundsInParent().intersects(wall5.getBoundsInParent())) {
 
-            collisionText.setText("Collision detected!");
+            collisionText.setText("You are dead.. Dun Dun Dun");
         } else {
             collisionText.setText("No collision");
         }
